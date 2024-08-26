@@ -30,3 +30,4 @@ Once you start working on your pull request, here are a few tips that you may fi
 
 -   [The README has instructions for how to build and run the site locally.](./README.md#building-and-previewing-the-site-locally)
 -   The SmartKids Docs site is built using Docusaurus. You may want to take a look at [the documentation for Docusaurus](https://docusaurus.io/docs) in order to learn more about what you can do with Docusaurus.
+-   You might want to make sure that your text editor supports [EditorConfig](https://editorconfig.org) files.
