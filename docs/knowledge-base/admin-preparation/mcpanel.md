@@ -1,5 +1,5 @@
 ---
-title: Minecraft Panel
+title: Minecraft Provisioning
 description: Guide for creating Mincraft Servers.
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Center Monitoring
+title: Home Assistant
 description: Home Assistant information
 ---
 

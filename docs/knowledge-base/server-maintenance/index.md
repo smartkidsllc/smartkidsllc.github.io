@@ -1,6 +1,7 @@
 ---
-title: Proxmox Server
-description: Smartkids Proxmox Server
+title: Server Maintenance
+sidebar_position: 1
+description: Proxmox Server Maintenance and Configuration
 ---
 
 Proxmox is the operating system that we have running on our server at the center.
