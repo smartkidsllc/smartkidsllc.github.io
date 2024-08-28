@@ -1,5 +1,5 @@
 ---
-title: Reverse Proxy
+title: Remote VPN
 description: Wireguard configuration info
 ---
 
