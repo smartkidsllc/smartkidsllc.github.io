@@ -14,8 +14,6 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
-              with:
-                  fetch-depth: 0
             - uses: threeal/setup-yarn-action@v2.0.0
 
             - name: Install dependencies
