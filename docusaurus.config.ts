@@ -64,7 +64,7 @@ const config: Config = {
                     type: "docSidebar",
                     sidebarId: "tutorialSidebar",
                     position: "left",
-                    label: "Tutorial",
+                    label: "Welcome",
                 },
                 {
                     href: "https://github.com/smartkidsllc/",
@@ -80,7 +80,7 @@ const config: Config = {
                     title: "Docs",
                     items: [
                         {
-                            label: "Tutorial",
+                            label: "Welcome",
                             to: "/docs/",
                         },
                     ],
