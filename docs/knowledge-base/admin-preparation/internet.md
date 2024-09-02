@@ -1,6 +1,6 @@
 ---
 title: Interent Access
-description: Regarding common internet access problems.
+description: Regarding common internet access problems
 ---
 
 Internet access at partner locations is critical to the operation of many of our classes.
