@@ -52,11 +52,11 @@ const config: Config = {
 
     themeConfig: {
         // Replace with your project's social card
-        image: "img/codewiz-social-card.png",
+        image: "img/code-wiz-social-card.png",
         navbar: {
             title: "SmartKids Docs",
             logo: {
-                alt: "Codewiz Mouse",
+                alt: "Code Wiz Mouse",
                 src: "img/logo.svg",
             },
             items: [

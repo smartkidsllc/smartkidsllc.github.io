@@ -6,7 +6,7 @@ export default function HomepageFeatures(): JSX.Element {
             <div className="container">
                 <div className="row">
                     <p className="features">
-                        Written by the coaches from Codewiz Reading.
+                        Written by the coaches from Code Wiz Reading.
                     </p>
                 </div>
             </div>
