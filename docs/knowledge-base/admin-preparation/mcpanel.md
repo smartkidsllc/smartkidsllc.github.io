@@ -1,6 +1,6 @@
 ---
 title: Minecraft Provisioning
-description: Guide for creating Mincraft Servers.
+description: Guide for creating Mincraft Servers
 ---
 
 Minecraft Servers need to be deployed in advanced of classes. The person in charge of managing the server and its resources is the one who shall create the servers and ensure that they are updated prior to a class.

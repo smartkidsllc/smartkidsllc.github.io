@@ -1,6 +1,6 @@
 ---
 title: Remote Management
-description: Instructions for managing devices using our Remote Monitoring and Managment System.
+description: Instructions for managing devices using our Remote Monitoring and Managment System
 ---
 
 Remote managment is an important part of administering a fleet of laptops.
