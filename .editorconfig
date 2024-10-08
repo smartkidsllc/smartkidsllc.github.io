@@ -1,0 +1,16 @@
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+spelling_language = en-US
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.md]
+# Sometimes, when you’re writing Markdown, you need to use four or more spaces
+# of indentation (two won’t work):
+# <https://spec.commonmark.org/0.31.2/#indented-code-blocks>
+indent_size = 4
