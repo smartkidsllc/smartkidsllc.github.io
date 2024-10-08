@@ -52,11 +52,11 @@ const config: Config = {
 
     themeConfig: {
         // Replace with your project's social card
-        image: "img/codewiz-social-card.png",
+        image: "img/code-wiz-social-card.png",
         navbar: {
             title: "SmartKids Docs",
             logo: {
-                alt: "Codewiz Mouse",
+                alt: "Code Wiz Mouse",
                 src: "img/logo.svg",
             },
             items: [
@@ -64,7 +64,7 @@ const config: Config = {
                     type: "docSidebar",
                     sidebarId: "tutorialSidebar",
                     position: "left",
-                    label: "Tutorial",
+                    label: "Welcome",
                 },
                 {
                     href: "https://github.com/smartkidsllc/",
@@ -80,7 +80,7 @@ const config: Config = {
                     title: "Docs",
                     items: [
                         {
-                            label: "Tutorial",
+                            label: "Welcome",
                             to: "/docs/",
                         },
                     ],
