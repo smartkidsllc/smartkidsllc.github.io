@@ -81,6 +81,9 @@
               then
                 sed --in-place "s/$current_flake_utils_tag/$latest_flake_utils_tag/g" flake.nix
               fi
+
+              # Flake lock file
+              run_nix flake update
             '';
         devShells.default = pkgs.mkShellNoCC {
           name = "shell-for-working-on-smartkidsllc.github.io";
