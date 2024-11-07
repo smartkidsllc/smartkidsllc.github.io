@@ -18,6 +18,16 @@
         pkgs = nixpkgs.legacyPackages."${system}";
       in
       {
+        packages.update-script =
+          pkgs.resholve.writeScriptBin "update-script"
+            {
+              inputs = [ ];
+              interpreter = pkgs.lib.meta.getExe pkgs.bash;
+            }
+            ''
+              set -o errexit -o nounset -o pipefail
+              echo This script does nothing at the moment, but future commits will fix that.
+            '';
         devShells.default = pkgs.mkShellNoCC {
           name = "shell-for-working-on-smartkidsllc.github.io";
           packages = [ pkgs.corepack ];
