@@ -86,6 +86,23 @@
                 # Flake lock file
                 run_nix flake update
               '';
+          update-script-part-2 =
+            pkgs.resholve.writeScriptBin "update-script-part-2"
+              {
+                inputs = [
+                  pkgs.corepack
+                ];
+                execer = [
+                  # TODO: These next ones can be removed when they’re fixed
+                  # upstream:
+                  "cannot:${pkgs.corepack}/bin/yarn"
+                ];
+                interpreter = pkgs.lib.meta.getExe pkgs.bash;
+              }
+              ''
+                set -o errexit -o nounset -o pipefail
+                yarn run update-script-part-2
+              '';
         };
         devShells.default = pkgs.mkShellNoCC {
           name = "shell-for-working-on-smartkidsllc.github.io";

@@ -12,7 +12,8 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "update-script-part-2": "echo This script does nothing at the moment, but future commits will fix that."
   },
   "dependencies": {
     "@docusaurus/core": "^3.5.1",
