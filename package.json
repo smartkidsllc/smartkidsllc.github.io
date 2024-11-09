@@ -13,7 +13,7 @@
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "typecheck": "tsc",
-    "update-script-part-2": "yarn set version latest"
+    "update-script-part-2": "yarn set version latest && yarn up"
   },
   "dependencies": {
     "@docusaurus/core": "^3.5.1",
