@@ -2178,7 +2178,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/types@npm:3.5.2, @docusaurus/types@npm:^3.5.1":
+"@docusaurus/types@npm:3.5.2":
   version: 3.5.2
   resolution: "@docusaurus/types@npm:3.5.2"
   dependencies:
@@ -2198,7 +2198,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/types@npm:3.6.1":
+"@docusaurus/types@npm:3.6.1, @docusaurus/types@npm:^3.6.1":
   version: 3.6.1
   resolution: "@docusaurus/types@npm:3.6.1"
   dependencies:
@@ -10611,7 +10611,7 @@ __metadata:
     "@docusaurus/module-type-aliases": "npm:^3.6.1"
     "@docusaurus/preset-classic": "npm:^3.5.1"
     "@docusaurus/tsconfig": "npm:^3.6.1"
-    "@docusaurus/types": "npm:^3.5.1"
+    "@docusaurus/types": "npm:^3.6.1"
     "@mdx-js/react": "npm:^3.1.0"
     clsx: "npm:^2.0.0"
     prism-react-renderer: "npm:^2.4.0"
