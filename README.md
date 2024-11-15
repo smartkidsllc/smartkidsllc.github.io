@@ -33,8 +33,7 @@ The repo holds the source code for the SmartKids Docs. If you want to contribute
 
         ```
         nix \
-            --extra-experimental-features nix-command \
-            --extra-experimental-features flakes \
+            --extra-experimental-features 'nix-command flakes' \
             develop
         ```
 
