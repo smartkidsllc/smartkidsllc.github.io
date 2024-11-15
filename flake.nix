@@ -101,6 +101,7 @@
               }
               ''
                 set -o errexit -o nounset -o pipefail
+                yarn install
                 yarn run update-script-part-2
               '';
         };
