@@ -31,3 +31,52 @@ Once you start working on your pull request, here are a few tips that you may fi
 -   [The README has instructions for how to build and run the site locally.](./README.md#building-and-previewing-the-site-locally)
 -   The SmartKids Docs site is built using Docusaurus. You may want to take a look at [the documentation for Docusaurus](https://docusaurus.io/docs) in order to learn more about what you can do with Docusaurus.
 -   You might want to make sure that your text editor supports [EditorConfig](https://editorconfig.org) files.
+
+## Manually updating dependencies
+
+This repository depends on software from many different sources. We use [a GitHub Actions workflow named “Open Auto-update Pull Request”](.github/workflows/auto-update-prs.yml) to try and make sure that all of our dependencies are kept up to date. GitHub will automatically run that workflow every so often. If that workflow detects that this repository has any out-of-date dependencies, then it will automatically open a pull request that updates those dependencies. After the pull request has been opened, someone will review the pull request. If the pull request works properly when it’s tested, then the reviewer will approve and merge the pull request.
+
+Aside from reviewing and merging, the auto-update pull request process is completely automated. Automated processes are good, but they’re never perfect. At some point, someone’s probably going to need to try doing updates manually. Here’s how you update this repository’s dependencies without using GitHub Actions.
+
+### With the Nix package manager
+
+1. Make sure that you have the [Nix](https://nix.dev) package manager by running this command:
+
+    ```
+    nix-build --version
+    ```
+
+    If that command gives you an error, then you need to install the Nix package manager.
+
+2. Make sure that you have a copy of this repo on your computer.
+
+3. Change directory into the root of the repo by running this command:
+
+    ```
+    cd <path-to-smartkidsllc.github.io-repo>
+    ```
+
+4. Update the Nix-related dependencies by running this command:
+
+    ```
+    nix --extra-experimental-features 'nix-command flakes' run .#update-script-part-1
+    ```
+
+5. Update the rest of the dependencies by running this command:
+
+    ```
+    nix --extra-experimental-features 'nix-command flakes' run .#update-script-part-2
+    ```
+
+### Without the Nix package manager
+
+> [!NOTE]
+> This process won’t update Nix-related dependencies.
+
+1. Build the site by following the instructions in [the README](./README.md).
+
+2. Update dependencies that aren’t related to Nix by running this command:
+
+    ```
+    yarn run update-script-part-2
+    ```
