@@ -13,7 +13,8 @@
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "typecheck": "tsc",
-    "update-script-part-2": "yarn set version latest && yarn up"
+    "update-package-versions-in-package.json": "ncu --target latest --upgrade",
+    "update-script-part-2": "yarn set version latest && yarn run update-package-versions-in-package.json && yarn up"
   },
   "dependencies": {
     "@docusaurus/core": "^3.6.1",
@@ -28,6 +29,7 @@
     "@docusaurus/module-type-aliases": "^3.6.1",
     "@docusaurus/tsconfig": "^3.6.1",
     "@docusaurus/types": "^3.6.1",
+    "npm-check-updates": "19.1.2",
     "typescript": "~5.6.3"
   },
   "browserslist": {
