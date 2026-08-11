@@ -67,7 +67,7 @@ const config: Config = {
                     label: "Welcome",
                 },
                 {
-                    href: "https://github.com/smartkidsllc/",
+                    href: "https://github.com/smartkidsllc/smartkidsllc.github.io/",
                     label: "GitHub",
                     position: "right",
                 },
