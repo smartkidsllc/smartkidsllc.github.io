@@ -2,15 +2,13 @@ import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
-const URL = "https://docs.smartkidsllc.com";
-
 const config: Config = {
     title: "SmartKids Docs",
     tagline: "Docs for SmartKids Employees",
     favicon: "img/favicon.ico",
 
     // Set the production url of your site here
-    url: URL,
+    url: "https://docs.smartkidsllc.com",
 
     // Set the /<baseUrl>/ pathname under which your site is served
     // For GitHub pages deployment, it is often '/<projectName>/'
@@ -107,7 +105,9 @@ const config: Config = {
                         },
                         {
                             label: "License",
-                            href: `${URL}/LICENSE.txt`,
+                            get href() {
+                              return `${config.url}/LICENSE.txt`;
+                            }
                         },
                     ],
                 },
